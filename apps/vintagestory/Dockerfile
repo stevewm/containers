@@ -4,7 +4,6 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine
 ARG VERSION="1.19.8"
 ARG CHANNEL="stable"
 
-ENV VS_DATA_PATH="/data"
 ENV \
     COMPlus_EnableDiagnostics="0" \
     DOTNET_CLI_HOME="/tmp/DOTNET_CLI_HOME" \
