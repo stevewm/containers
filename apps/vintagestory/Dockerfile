@@ -26,9 +26,9 @@ RUN \
     && \
     mkdir -p /app/bin \
     && \
-    echo "Downloading VintageStory ${VERSION} from ${CHANNEL}" &&\
-    curl -fsSL $(curl -fsSL "https://api.vintagestory.at/${CHANNEL}.json" | jq --raw-output '.["${VERSION}"].linuxserver.urls.cdn') \
-    | tar xzf - -C /app/bin \
+    URL=$(curl -fsSL "https://api.vintagestory.at/${CHANNEL}.json" | jq --raw-output '.["${VERSION}"].linuxserver.urls.cdn') && \
+    echo "URL: ${URL}" && \
+    curl -fsSL "${URL}" | tar xzf - -C /app/bin \
     && chown -R root:root /app \
     && chmod -R 755 /app \
     && rm -rf /tmp/*
