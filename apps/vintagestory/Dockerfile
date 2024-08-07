@@ -26,8 +26,8 @@ RUN \
     && \
     mkdir -p /app/bin \
     && \
-    curl -fsSL "https://api.vintagestory.at/${CHANNEL}.json" | jq --raw-output '.["${VERSION}"].linuxserver.urls.cdn' \
-        | tar xzf - -C /app/bin \
+    curl -fsSL $(curl -fsSL "https://api.vintagestory.at/${CHANNEL}.json" | jq --raw-output '.["${VERSION}"].linuxserver.urls.cdn') \
+    | tar xzf - -C /app/bin \
     && chown -R root:root /app \
     && chmod -R 755 /app \
     && rm -rf /tmp/*
