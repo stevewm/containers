@@ -26,6 +26,7 @@ RUN \
     && \
     mkdir -p /app/bin \
     && \
+    echo "Downloading VintageStory ${VERSION} from ${CHANNEL}" &&\
     curl -fsSL $(curl -fsSL "https://api.vintagestory.at/${CHANNEL}.json" | jq --raw-output '.["${VERSION}"].linuxserver.urls.cdn') \
     | tar xzf - -C /app/bin \
     && chown -R root:root /app \
