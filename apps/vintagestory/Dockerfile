@@ -26,7 +26,7 @@ RUN \
     && \
     mkdir -p /app/bin \
     && \
-    curl -fsSL "https://cdn.vintagestory.at/gamefiles/stable/vs_server_linux-x64_${VERSION}.tar.gz" \
+    curl -fsSL "https://cdn.vintagestory.at/gamefiles/${CHANNEL}/vs_server_linux-x64_${VERSION}.tar.gz" \
     | tar xzf - -C /app/bin \
     && chown -R root:root /app \
     && chmod -R 755 /app \
