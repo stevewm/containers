@@ -3,13 +3,13 @@ app: vintagestory
 semver: true
 channels:
   - name: stable
-    platforms: ["linux/amd64", "linux/arm64"]
+    platforms: ["linux/amd64"]
     stable: true
     tests:
       enabled: true
       type: cli
   - name: unstable
-    platforms: ["linux/amd64", "linux/arm64"]
+    platforms: ["linux/amd64"]
     stable: false
     tests:
       enabled: true
