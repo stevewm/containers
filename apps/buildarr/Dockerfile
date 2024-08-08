@@ -30,11 +30,11 @@ RUN \
         moreutils \
         tzdata \
     && \
-    pip install --upgrade "buildarr==${VERSION}" \
-    pip install --upgrade "buildarr-jellyseerr" \
-    pip install --upgrade "buildarr-prowlarr" \
-    pip install --upgrade "buildarr-radarr" \
-    pip install --upgrade "buildarr-sonarr" \
+    pip install --upgrade "buildarr==$VERSION" \
+    && pip install --upgrade "buildarr-jellyseerr" \
+    && pip install --upgrade "buildarr-prowlarr" \
+    && pip install --upgrade "buildarr-radarr" \
+    && pip install --upgrade "buildarr-sonarr" \
     && chown -R root:root /app \
     && chmod -R 755 /app \
     && rm -rf \

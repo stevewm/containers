@@ -8,6 +8,6 @@ fi
 #shellcheck disable=SC2086
 exec \
     buildarr \
-            run \
+            daemon \
             ${BUILDARR_CONFIG_PATH:-/config/buildarr.yml} \
             "$@"
