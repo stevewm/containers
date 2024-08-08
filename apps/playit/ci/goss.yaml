@@ -3,4 +3,6 @@
 file:
   /app/bin/playit:
     exists: true
-
+process:
+  playit:
+    running: true
