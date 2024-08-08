@@ -47,6 +47,7 @@ COPY ./apps/buildarr/entrypoint.sh /entrypoint.sh
 USER nobody:nogroup
 WORKDIR /config
 VOLUME ["/config"]
+COPY ./apps/buildarr/buildarr.yml /config/buildarr.yml
 
 ENTRYPOINT ["/usr/bin/catatonit", "--"]
 CMD ["/entrypoint.sh"]
