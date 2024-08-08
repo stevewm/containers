@@ -1,0 +1,8 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
+# process: # TODO: Fix this
+#   /usr/local/bin/buildarr:
+#     running: true
+file:
+  /usr/local/bin/buildarr:
+    exists: true
