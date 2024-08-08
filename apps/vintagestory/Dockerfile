@@ -1,5 +1,5 @@
 ARG VERSION
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine
+FROM mcr.microsoft.com/dotnet/runtime:7.0-alpine
 
 ARG VERSION="1.19.8"
 ARG CHANNEL="stable"
@@ -22,6 +22,10 @@ RUN \
         ca-certificates \
         catatonit \
         curl \
+        libgcc \
+        libssl3 \
+        libstdc++ \
+        zlib \
         jq \
         tzdata \
     && \
