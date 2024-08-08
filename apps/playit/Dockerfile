@@ -20,7 +20,7 @@ RUN \
         curl \
         tzdata \
     && \
-    curl -fsSL -o /app/bin/playit "https://github.com/playit-cloud/playit-agent/releases/download/v${VERSION}/playit-${TARGETPLATFORM}" \
+    curl -fsSL -o /app/bin/playit "https://github.com/playit-cloud/playit-agent/releases/download/v${VERSION}/playit-$(echo $TARGETPLATFORM | sed 's/\//-/g')" \
     && chown -R root:root /app \
     && chmod -R 755 /app \
     && rm -rf \
