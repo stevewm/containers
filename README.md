@@ -110,15 +110,12 @@ Container | Channel | Image
 --- | --- | ---
 [actions-runner](https://github.com/stevewm/containers/pkgs/container/actions-runner) | stable | ghcr.io/stevewm/actions-runner
 [bazarr](https://github.com/stevewm/containers/pkgs/container/bazarr) | stable | ghcr.io/stevewm/bazarr
+[buildarr](https://github.com/stevewm/containers/pkgs/container/buildarr) | stable | ghcr.io/stevewm/buildarr
 [home-assistant](https://github.com/stevewm/containers/pkgs/container/home-assistant) | stable | ghcr.io/stevewm/home-assistant
-[jbops](https://github.com/stevewm/containers/pkgs/container/jbops) | stable | ghcr.io/stevewm/jbops
 [lidarr](https://github.com/stevewm/containers/pkgs/container/lidarr) | master | ghcr.io/stevewm/lidarr
 [lidarr-develop](https://github.com/stevewm/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/stevewm/lidarr-develop
 [lidarr-nightly](https://github.com/stevewm/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/stevewm/lidarr-nightly
 [par2cmdline-turbo](https://github.com/stevewm/containers/pkgs/container/par2cmdline-turbo) | stable | ghcr.io/stevewm/par2cmdline-turbo
-[plex](https://github.com/stevewm/containers/pkgs/container/plex) | stable | ghcr.io/stevewm/plex
-[plex-beta](https://github.com/stevewm/containers/pkgs/container/plex-beta) | beta | ghcr.io/stevewm/plex-beta
-[postgres-init](https://github.com/stevewm/containers/pkgs/container/postgres-init) | stable | ghcr.io/stevewm/postgres-init
 [prowlarr](https://github.com/stevewm/containers/pkgs/container/prowlarr) | master | ghcr.io/stevewm/prowlarr
 [prowlarr-develop](https://github.com/stevewm/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/stevewm/prowlarr-develop
 [prowlarr-nightly](https://github.com/stevewm/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/stevewm/prowlarr-nightly
