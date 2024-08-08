@@ -116,6 +116,7 @@ Container | Channel | Image
 [lidarr-develop](https://github.com/stevewm/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/stevewm/lidarr-develop
 [lidarr-nightly](https://github.com/stevewm/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/stevewm/lidarr-nightly
 [par2cmdline-turbo](https://github.com/stevewm/containers/pkgs/container/par2cmdline-turbo) | stable | ghcr.io/stevewm/par2cmdline-turbo
+[playit](https://github.com/stevewm/containers/pkgs/container/playit) | stable | ghcr.io/stevewm/playit
 [prowlarr](https://github.com/stevewm/containers/pkgs/container/prowlarr) | master | ghcr.io/stevewm/prowlarr
 [prowlarr-develop](https://github.com/stevewm/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/stevewm/prowlarr-develop
 [prowlarr-nightly](https://github.com/stevewm/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/stevewm/prowlarr-nightly
