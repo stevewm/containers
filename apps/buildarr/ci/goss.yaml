@@ -6,4 +6,3 @@ process:
 file:
   /usr/local/bin/buildarr:
     exists: true
-
