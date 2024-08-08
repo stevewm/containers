@@ -4,5 +4,5 @@ file:
   /app/bin/playit:
     exists: true
 process:
-  playit:
+  /app/bin/playit:
     running: true
