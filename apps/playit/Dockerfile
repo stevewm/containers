@@ -19,14 +19,18 @@ RUN \
         catatonit \
         curl \
         tzdata \
-    && \
-    curl -fsSL -o /app/bin/playit "https://github.com/playit-cloud/playit-agent/releases/download/v${VERSION}/playit-$(echo $TARGETPLATFORM | sed 's/\//-/g')" \
-    && chown -R root:root /app \
-    && chmod -R 755 /app \
-    && rm -rf \
-        /root/.cache \
-        /root/.cargo \
-        /tmp/*
+     && \
+     mkdir -p /app/bin && \
+    curl -fsSL -o /app/bin/playit "https://github.com/playit-cloud/playit-agent/releases/download/v${VERSION}/playit-$(echo ${TARGETPLATFORM} | sed 's|/|-|g')" \
+     && \
+   chown -R root:root /app \
+&& chmod -R 755 /app \
+&& chown -R root:root /app/bin/ \
+&& chmod -R 755 /app/bin/ \
+&& rm -rf \
+    /root/.cache \
+    /root/.cargo \
+    /tmp/*
 
 COPY ./apps/playit/entrypoint.sh /entrypoint.sh
 
