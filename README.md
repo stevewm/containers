@@ -131,6 +131,8 @@ Container | Channel | Image
 [sonarr](https://github.com/stevewm/containers/pkgs/container/sonarr) | main | ghcr.io/stevewm/sonarr
 [sonarr-develop](https://github.com/stevewm/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/stevewm/sonarr-develop
 [theme-park](https://github.com/stevewm/containers/pkgs/container/theme-park) | stable | ghcr.io/stevewm/theme-park
+[vintagestory](https://github.com/stevewm/containers/pkgs/container/vintagestory) | stable | ghcr.io/stevewm/vintagestory
+[vintagestory-unstable](https://github.com/stevewm/containers/pkgs/container/vintagestory-unstable) | unstable | ghcr.io/stevewm/vintagestory-unstable
 [volsync](https://github.com/stevewm/containers/pkgs/container/volsync) | stable | ghcr.io/stevewm/volsync
 
 
