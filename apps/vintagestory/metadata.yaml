@@ -1,0 +1,16 @@
+---
+app: vintagestory
+semver: true
+channels:
+  - name: stable
+    platforms: ["linux/amd64"]
+    stable: true
+    tests:
+      enabled: false
+      type: cli
+  - name: unstable
+    platforms: ["linux/amd64"]
+    stable: false
+    tests:
+      enabled: false
+      type: cli
