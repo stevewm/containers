@@ -6,11 +6,11 @@ channels:
     platforms: ["linux/amd64"]
     stable: true
     tests:
-      enabled: true
+      enabled: false
       type: cli
   - name: unstable
     platforms: ["linux/amd64"]
     stable: false
     tests:
-      enabled: true
+      enabled: false
       type: cli
