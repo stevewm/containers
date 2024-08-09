@@ -1,9 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
 ---
-process:
-  dotnet:
-    running: true
-
 port:
   tcp:42420:
     listening: true

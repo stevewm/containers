@@ -4,9 +4,7 @@ ARG VERSION
 ARG CHANNEL
 
 ENV \
-    COMPlus_EnableDiagnostics="0" \
-    DOTNET_CLI_HOME="/tmp/DOTNET_CLI_HOME" \
-    XDG_DATA_HOME="/tmp"
+    COMPlus_EnableDiagnostics="0"
 
 ENV UMASK="0002" \
     TZ="Etc/UTC"
