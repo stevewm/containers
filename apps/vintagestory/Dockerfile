@@ -1,8 +1,7 @@
-ARG VERSION
 FROM mcr.microsoft.com/dotnet/runtime:7.0-alpine
 
-ARG VERSION="1.19.8"
-ARG CHANNEL="stable"
+ARG VERSION
+ARG CHANNEL
 
 ENV \
     COMPlus_EnableDiagnostics="0" \
@@ -22,10 +21,6 @@ RUN \
         ca-certificates \
         catatonit \
         curl \
-        libgcc \
-        libssl3 \
-        libstdc++ \
-        zlib \
         jq \
         tzdata \
     && \

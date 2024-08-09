@@ -3,6 +3,11 @@
 process:
   dotnet:
     running: true
+
 port:
-  tcp6:42420:
+  tcp:42420:
     listening: true
+
+file:
+  /app/bin/VintagestoryServer.dll:
+    exists: true
