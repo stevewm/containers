@@ -4,5 +4,5 @@
 exec \
     /app/bin/playit \
         --secret_path /config/playit.toml \
-        --stdout-logs \
+        --stdout \
         "$@"
