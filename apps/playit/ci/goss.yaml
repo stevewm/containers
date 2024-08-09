@@ -3,3 +3,6 @@
 file:
   /app/bin/playit:
     exists: true
+# process: # FIXME: This doesnt seem to detect the process running?
+#   playit:
+#     running: true
