@@ -30,11 +30,11 @@ RUN \
         tzdata \
     && \
     curl -fsSL -o /tmp/app.zip "https://github.com/stevewm/secretgenerator/archive/refs/tags/v${VERSION}.zip" \
-    && unzip -q /tmp/app.zip -d /app \
+    && unzip -q /tmp/app.zip -d /tmp/ \
+    && mv /tmp/secretgenerator-${VERSION}/* /app/ \
     && pip install -r /app/requirements.txt \
     && chown -R root:root /app \
     && chmod -R 755 /app \
-    && apk del --purge .build-deps \
     && rm -rf \
         /root/.cache \
         /root/.cargo \
