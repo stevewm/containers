@@ -29,7 +29,7 @@ RUN \
         curl \
         tzdata \
     && \
-    curl -fsSL -o /tmp/app.zip "https://github.com/stevewm/secretgenerator/releases/download/v${VERSION}/secretgenerator.zip" \
+    curl -fsSL -o /tmp/app.zip "https://github.com/stevewm/secretgenerator/archive/refs/tags/v${VERSION}.zip" \
     && unzip -q /tmp/app.zip -d /app \
     && pip install -r /app/requirements.txt \
     && chown -R root:root /app \
